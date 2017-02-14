@@ -96,6 +96,7 @@ Vagrant.configure("2") do |config|
     apt-get -y install python3-pip
 
     # installing matplotlib - matrix plotting library
+    # you have to upgrade matplot lib too
     apt-get -y install python3-matplotlib
     pip3 install --upgrade matplotlib
 
