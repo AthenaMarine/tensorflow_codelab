@@ -1,0 +1,9 @@
+The code lab for TensorFlow and deep learning (https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0)
+requires Python 3, TensorFlow and Matplotlib all of the correct versions. It also requires Git to download the materials from GitHub.  Since folks may already be using other versions of Python, etc. it made sense to create a VM with all necessary items installed.  For anyone who wants to do the code lab, without affecting their own local environment, I have provided a Vagrantfile.  The Vagrantfile runs the necessary steps to install and configure a VirtualBox VM with Git, Python, Tensorflow, and Matplotlib.
+
+Prerequisites to using the Vagrantfile
+1. install the latest Vagrant (https://www.vagrantup.com/downloads.html)
+2. install the latest VirtualBox (https://www.virtualbox.org/)
+
+Using the Vagrantfile
+1. 
