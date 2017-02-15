@@ -54,6 +54,7 @@ and from the menu browse to:
        ```
        
     You should see a new window appear in the UI showing 6 different charts, and data in the terminal window. 
+    ![alt text](https://github.com/AthenaMarine/tensorflow_codelab/blob/master/TensorFlowVM.png "Working TF Environment")
     
 2. Now you can follow along in the tutorial.
 
