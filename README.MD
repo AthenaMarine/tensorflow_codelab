@@ -1,6 +1,6 @@
 # Using Vagrant for the TensorFlow and deep learning code lab
 
-The code lab for [TensorFlow and deep learning](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0)
+The code lab for [TensorFlow and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0)
 requires Python 3, TensorFlow and Matplotlib all of the correct versions. It also requires Git to download the tutorial 
 materials from GitHub.  
 Since folks may already be using other versions of Python, etc. it made sense to create a VM with all necessary items installed.  
