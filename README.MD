@@ -2,8 +2,8 @@ The code lab for TensorFlow and deep learning [https://codelabs.developers.googl
 requires Python 3, TensorFlow and Matplotlib all of the correct versions. It also requires Git to download the tutorial 
 materials from GitHub.  
 Since folks may already be using other versions of Python, etc. it made sense to create a VM with all necessary items installed.  
-For anyone who wants to do the code lab, without affecting their own local environment, I have provided a Vagrantfile.  
-The Vagrantfile runs the necessary steps to install and configure a VirtualBox VM with Git, Python, Tensorflow, and Matplotlib.
+For anyone who wants to do the code lab without affecting their own local environment, I have provided a Vagrantfile.  
+The Vagrantfile performs the necessary steps to install and configure a VirtualBox VM with Git, Python, Tensorflow, and Matplotlib.
 To learn more about Vagrant go here: [https://www.vagrantup.com/docs/getting-started/]
 Note: The VM created using this file will consume 4GB of RAM on the laptop or PC you run it on.
 
