@@ -29,14 +29,24 @@ Using the Vagrantfile
    
 5. To make the Ubuntu display larger, right-click on the desktop and from the menu browse to:
        Applications->Settings->Display
-   and change the resolution to something larger, 1920 x 1600 for example.
-   
-6. To run a terminal window from the TensorFlow project directory, right-click on the desktop 
+   Change the resolution to something larger, (1920 x 1600 for example,) and press the Apply button.
+
+Check that Everything Works
+
+6. Run a terminal window from the TensorFlow project directory. Right-click on the desktop 
 and from the menu browse to:
        Open Terminal Here
     Then change to the directory:
-      cd /home/ubuntu/tensorflow-mnist-tutorial
-      
-7. When you are completely finished with the tutorial, you can destroy the VM with the command:
+       cd /home/ubuntu/tensorflow-mnist-tutorial
+    Then run the command:
+       python3 mnist_1.0_softmax.py
+       
+    You should see a new window appear in the UI showing 6 different charts, and data in the terminal window. 
+    
+8. Now you can follow along in the tutorial.
+
+Final Clean-Up
+
+9. When you are completely finished with the tutorial, you can destroy the VM with the command:
         vagrant destroy
 
