@@ -57,6 +57,15 @@ and from the menu browse to:
     
 2. Now you can follow along in the tutorial.
 
+3. If you will not be working on the tutorial right away, you can suspend the VM, and then bring it back up later with the following commands:
+
+       ```
+       vagrant suspend
+       ```
+       ```
+       vagrant resume
+       ```
+
 ## Final Clean-Up
 
 1. When you are completely finished with the tutorial, you can destroy the VM with the command:
