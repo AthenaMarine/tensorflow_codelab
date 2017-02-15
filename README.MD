@@ -7,6 +7,7 @@ Since folks may already be using other versions of Python, etc. it made sense to
 For anyone who wants to do the code lab without affecting their own local environment, I have provided a Vagrantfile.  
 The Vagrantfile performs the necessary steps to install and configure a VirtualBox VM with Git, Python, Tensorflow, and Matplotlib.
 To learn more about Vagrant go here: [Getting Started](https://www.vagrantup.com/docs/getting-started/)
+
 Note: The VM created using this file will consume 4GB of RAM on the laptop or PC you run it on.
 
 ## Prerequisites to using the Vagrantfile on your laptop/PC
@@ -26,7 +27,9 @@ Note: The VM created using this file will consume 4GB of RAM on the laptop or PC
 2. Change, (cd command) to the directory where the Vagrant file exists. 
 
 3. type in the command to start vagrant:
+       ```
        vagrant up
+       ```
    This will take 15-20 minutes as it is setting up everything.
    
 4. When vagrant has finished, you will see a VirtualBox instance running an Ubuntu desktop display.
@@ -42,9 +45,13 @@ Note: The VM created using this file will consume 4GB of RAM on the laptop or PC
 and from the menu browse to:
        Open Terminal Here
     Then change to the directory:
+       ```
        cd /home/ubuntu/tensorflow-mnist-tutorial
+       ```
     Then run the command:
+       ```
        python3 mnist_1.0_softmax.py
+       ```
        
     You should see a new window appear in the UI showing 6 different charts, and data in the terminal window. 
     
@@ -53,5 +60,8 @@ and from the menu browse to:
 ## Final Clean-Up
 
 9. When you are completely finished with the tutorial, you can destroy the VM with the command:
-        vagrant destroy
+
+       ```
+       vagrant destroy
+       ```
 
