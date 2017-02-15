@@ -1,21 +1,26 @@
-The code lab for TensorFlow and deep learning [https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0]
+## Using Vagrant for the TensorFlow and deep learning code lab
+
+The code lab for [TensorFlow and deep learning](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0)
 requires Python 3, TensorFlow and Matplotlib all of the correct versions. It also requires Git to download the tutorial 
 materials from GitHub.  
 Since folks may already be using other versions of Python, etc. it made sense to create a VM with all necessary items installed.  
 For anyone who wants to do the code lab without affecting their own local environment, I have provided a Vagrantfile.  
 The Vagrantfile performs the necessary steps to install and configure a VirtualBox VM with Git, Python, Tensorflow, and Matplotlib.
-To learn more about Vagrant go here: [https://www.vagrantup.com/docs/getting-started/]
+To learn more about Vagrant go here: [Getting Started](https://www.vagrantup.com/docs/getting-started/)
 Note: The VM created using this file will consume 4GB of RAM on the laptop or PC you run it on.
 
-Prerequisites to using the Vagrantfile on your laptop/PC
-1. install the latest Vagrant [https://www.vagrantup.com/downloads.html]
-2. install the latest VirtualBox [https://www.virtualbox.org/]
-3. install Git (if you don't have it already) [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]
+## Prerequisites to using the Vagrantfile on your laptop/PC
 
-Using the Vagrantfile
+1. install the latest [Vagrant](https://www.vagrantup.com/downloads.html) software
+2. install the latest [VirtualBox](https://www.virtualbox.org/) VM software
+3. install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (if you don't have it already)
+
+## Using the Vagrantfile
 
 1. In the terminal window type in the git clone command for this repository:
+       ```
        git clone https://github.com/AthenaMarine/tensorflow_codelab.git
+       ```
    This will download the Vagrantfile and this README file into the directory you choose. 
    
 2. Change, (cd command) to the directory where the Vagrant file exists. 
@@ -31,7 +36,7 @@ Using the Vagrantfile
        Applications->Settings->Display
    Change the resolution to something larger, (1920 x 1600 for example,) and press the Apply button.
 
-Check that Everything Works
+## Check that Everything Works
 
 6. Run a terminal window from the TensorFlow project directory. Right-click on the desktop 
 and from the menu browse to:
@@ -45,7 +50,7 @@ and from the menu browse to:
     
 8. Now you can follow along in the tutorial.
 
-Final Clean-Up
+## Final Clean-Up
 
 9. When you are completely finished with the tutorial, you can destroy the VM with the command:
         vagrant destroy
