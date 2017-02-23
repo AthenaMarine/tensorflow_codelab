@@ -8,7 +8,7 @@ For anyone who wants to do the code lab without affecting their own local enviro
 The Vagrantfile performs the necessary steps to install and configure a VirtualBox VM with Git, Python, Tensorflow, and Matplotlib.
 To learn more about Vagrant go here: [Getting Started](https://www.vagrantup.com/docs/getting-started/)
 
-Note: The VM created using this file will consume 4GB of RAM on the laptop or PC you run it on.
+Note: The VM created using this file will consume 4GB of RAM on the laptop or PC you run it on.  TensorFlow has a heavy memory requirement and will take a long time to execute the examples.  If your laptop or PC has 16GB of RAM It is recommended that you allocate 8GB to the VM to make TensorFlow run a bit faster.  To do that you will need to open the Vagrantfile and change the vb.memory parameter from "4096", to "8192", and then save the Vagrantfile.
 
 ## Prerequisites to using the Vagrantfile on your laptop/PC
 
@@ -38,6 +38,15 @@ Note: The VM created using this file will consume 4GB of RAM on the laptop or PC
 5. To make the Ubuntu display larger, right-click on the desktop and from the menu browse to:
        Applications->Settings->Display
    Change the resolution to something larger, (1920 x 1600 for example,) and press the Apply button.
+   
+6. (Optional) If you are prompted to login first, you'll login as the ubuntu user.  To change the ubuntu user password, open a terminal on your machine (not the VM) and ssh into vagrant 
+     ```
+     ssh vagrant
+     ```
+then enter the passwd command to change the password
+     ```
+     sudo passwd ubuntu
+     ````    
 
 ## Check that Everything Works
 
@@ -58,20 +67,25 @@ and from the menu browse to:
     
 2. Now you can follow along in the tutorial.
 
-3. If you will not be working on the tutorial right away, you can suspend the VM, and then bring it back up later with the following commands:
+3. It takes a while for the training to occur.  If you started out with the default 4GB of RAM for your VM, and you can spare addtional RAM, you can update the vagrant configuration to add more RAM to the VM.  To do that you will need to open the Vagrantfile and change the vb.memory parameter from "4096", to "8192", and then save the Vagrantfile. Then you will need to push the changes to your running VM with the following command:
+     ```
+     vagrant reload
+     ```
 
-       ```
-       vagrant suspend
-       ```
-       ```
-       vagrant resume
-       ```
+4. If you will not be working on the tutorial right away, you can suspend the VM, and then bring it back up later with the following commands:
+
+     ```
+     vagrant suspend     
+     ```
+     ```
+     vagrant resume
+     ```
 
 ## Final Clean-Up
 
 1. When you are completely finished with the tutorial, you can destroy the VM with the command:
 
-       ```
-       vagrant destroy
-       ```
+     ```
+     vagrant destroy
+     ```
 
