@@ -67,7 +67,7 @@ and from the menu browse to:
     
 2. Now you can follow along in the tutorial.
 
-3. It takes a while for the training to occur.  If you started out with the default 4GB of RAM for your VM, and you can spare addtional RAM, you can update the vagrant configuration to add more RAM to the VM.  To do that you will need to open the Vagrantfile and change the vb.memory parameter from "4096", to "8192", and then save the Vagrantfile. Then you will need to push the changes to your running VM with the following command:
+3. (Optional) It takes a while for the training to occur.  If you created your VM with the default of 4GB of RAM, and you can spare addtional RAM, you can update the vagrant configuration to add more RAM to your VM.  To do that you will need to open the Vagrantfile and change the vb.memory parameter from "4096", to "8192", and then save the Vagrantfile. Then you will need to push the changes to your running VM with the following command:
      ```
      vagrant reload
      ```
